@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HIBI Works — エンジニアとデザイナーの2人組。Web制作からアプリ開発まで。">
+  <title>HIBI Works</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">HIBI Works</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg-circle"></div>
+    <div class="hero-content">
+      <p class="hero-label">Engineering · Design · Planning</p>
+      <h1 class="hero-title">Make things<br><span class="hero-accent">that matter.</span></h1>
+      <p class="hero-sub">
+        Webサイト制作から自社アプリ開発まで、<br>
+        エンジニアとデザイナーの2人で、真剣に向き合います。
+      </p>
+      <a href="#contact" class="btn">お問い合わせ</a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-label fade-in">Services</p>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <span class="service-num">01</span>
+          <h3>Web制作</h3>
+          <p>コーポレートサイト、LP、ECサイトなど。デザインから実装まで一貫して対応します。</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay: 0.1s">
+          <span class="service-num">02</span>
+          <h3>アプリ開発</h3>
+          <p>Webアプリやモバイルアプリをゼロから設計・開発。受託も自社プロダクトも。</p>
+        </div>
+        <div class="service-card fade-in" style="transition-delay: 0.2s">
+          <span class="service-num">03</span>
+          <h3>企画・コンサル</h3>
+          <p>アイデアの言語化から技術選定まで。プロダクトを正しい方向へ進める伴走をします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <p class="section-label fade-in">About</p>
+      <div class="about-content fade-in">
+        <div class="about-text">
+          <p class="about-lead">エンジニアとデザイナーの、2人組。</p>
+          <p>HIBI Worksは、エンジニアリング・デザイン・企画の力を掛け合わせ、クオリティの高いものづくりをする小さなチームです。受託案件も自社プロダクトも、日々（HIBI）真剣に向き合っています。</p>
+        </div>
+        <div class="about-tags">
+          <span class="tag">Engineering</span>
+          <span class="tag">UI / UX Design</span>
+          <span class="tag">Planning</span>
+          <span class="tag">Web</span>
+          <span class="tag">App</span>
+          <span class="tag">2 members</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-label fade-in">Contact</p>
+      <p class="contact-lead fade-in">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
+      <a href="mailto:contact@hibiworks.com" class="contact-email fade-in">
+        contact@hibiworks.com
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-logo">HIBI Works</p>
+      <p class="footer-copy">© <span id="year"></span> HIBI Works. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
