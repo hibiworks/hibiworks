@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HIBI Works — エンジニアとデザイナーの2人組。Web制作からアプリ開発まで。">
   <title>HIBI Works</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="loading">
+
+  <div id="cursorDot" class="cursor-dot"></div>
+  <div id="cursorRing" class="cursor-ring"></div>
+
+  <div id="intro" class="intro" aria-hidden="true">
+    <div class="intro-panel intro-top"></div>
+    <div class="intro-panel intro-bottom"></div>
+    <div class="intro-center">
+      <span class="intro-logo">HIBI Works</span>
+      <span class="intro-tagline">Engineering · Design · Planning</span>
+    </div>
+  </div>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
@@ -22,73 +38,87 @@
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="hero-bg-circle"></div>
+  <section class="hero" data-bg="#F7F3EE">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-bg-text">HIBI</div>
+    </div>
     <div class="hero-content">
       <p class="hero-label">Engineering · Design · Planning</p>
-      <h1 class="hero-title">Make things<br><span class="hero-accent">that matter.</span></h1>
+      <h1 class="hero-title">
+        <span class="title-line"><span class="title-word">Make things</span></span>
+        <span class="title-line"><span class="title-word hero-accent">that matter.</span></span>
+      </h1>
       <p class="hero-sub">
         Webサイト制作から自社アプリ開発まで、<br>
-        エンジニアとデザイナーの2人で、真剣に向き合います。
+        真剣に向き合います。
       </p>
-      <a href="#contact" class="btn">お問い合わせ</a>
+      <a href="#contact" class="hero-cta">お問い合わせ <span class="cta-dash">——</span><span class="cta-arrow">→</span></a>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <section class="services" id="services">
+  <section class="services" id="services" data-bg="#EEE0CE">
     <div class="container">
       <p class="section-label fade-in">Services</p>
-      <div class="services-grid">
-        <div class="service-card fade-in">
+      <div class="services-list">
+        <div class="service-row fade-in">
           <span class="service-num">01</span>
-          <h3>Web制作</h3>
-          <p>コーポレートサイト、LP、ECサイトなど。デザインから実装まで一貫して対応します。</p>
+          <h3 class="service-name">Web制作</h3>
+          <p class="service-desc">コーポレートサイト、LP、ECサイトなど。<br>デザインから実装まで一貫して対応します。</p>
         </div>
-        <div class="service-card fade-in" style="transition-delay: 0.1s">
+        <div class="service-row fade-in">
           <span class="service-num">02</span>
-          <h3>アプリ開発</h3>
-          <p>Webアプリやモバイルアプリをゼロから設計・開発。受託も自社プロダクトも。</p>
+          <h3 class="service-name">アプリ開発</h3>
+          <p class="service-desc">Webアプリやモバイルアプリをゼロから設計・開発。<br>受託も自社プロダクトも。</p>
         </div>
-        <div class="service-card fade-in" style="transition-delay: 0.2s">
+        <div class="service-row fade-in">
           <span class="service-num">03</span>
-          <h3>企画・コンサル</h3>
-          <p>アイデアの言語化から技術選定まで。プロダクトを正しい方向へ進める伴走をします。</p>
+          <h3 class="service-name">企画・コンサル</h3>
+          <p class="service-desc">アイデアの言語化から技術選定まで。<br>プロダクトを正しい方向へ進める伴走をします。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about" id="about">
+  <section class="about" id="about" data-bg="#E5D0BB">
     <div class="container">
       <p class="section-label fade-in">About</p>
-      <div class="about-content fade-in">
-        <div class="about-text">
-          <p class="about-lead">エンジニアとデザイナーの、2人組。</p>
-          <p>HIBI Worksは、エンジニアリング・デザイン・企画の力を掛け合わせ、クオリティの高いものづくりをする小さなチームです。受託案件も自社プロダクトも、日々（HIBI）真剣に向き合っています。</p>
-        </div>
-        <div class="about-tags">
-          <span class="tag">Engineering</span>
-          <span class="tag">UI / UX Design</span>
-          <span class="tag">Planning</span>
-          <span class="tag">Web</span>
-          <span class="tag">App</span>
-          <span class="tag">2 members</span>
-        </div>
+      <h2 class="about-heading fade-in">想いを整え、伝わる形へ。</h2>
+      <p class="about-body fade-in">
+        HIBI Worksは、エンジニアリング・デザイン・企画の力を掛け合わせ、<br>
+        クオリティの高いものづくりをする小さなチームです。<br>
+        受託案件も自社プロダクトも、日々（HIBI）真剣に向き合っています。
+      </p>
+      <div class="about-tags fade-in">
+        <span class="tag">Engineering</span>
+        <span class="tag">Design</span>
+        <span class="tag">Planning</span>
+        <span class="tag">Web</span>
+        <span class="tag">App</span>
+        <span class="tag">Consulting</span>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact" id="contact" data-bg="#EEE0CE">
     <div class="container">
-      <p class="section-label fade-in">Contact</p>
-      <p class="contact-lead fade-in">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
-      <a href="mailto:contact@hibiworks.com" class="contact-email fade-in">
-        contact@hibiworks.com
-      </a>
+      <div class="contact-inner">
+        <p class="section-label fade-in">Contact</p>
+        <p class="contact-lead fade-in">お仕事のご依頼・ご相談はお気軽にどうぞ。</p>
+        <a href="mailto:contact@hibiworks.com" class="contact-email fade-in">
+          contact@hibiworks.com
+        </a>
+      </div>
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer" data-bg="#F7F3EE">
     <div class="container">
       <p class="footer-logo">HIBI Works</p>
       <p class="footer-copy">© <span id="year"></span> HIBI Works. All rights reserved.</p>
@@ -97,4 +127,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
