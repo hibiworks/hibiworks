@@ -69,9 +69,9 @@ function updateBackground() {
   for (let i = 1; i < secs.length; i++) {
     const secTop = secs[i].offsetTop;
 
-    // Transition zone: section enters viewport → its top reaches 40% of viewport height
-    const start = secTop - windowH;
-    const end = secTop - windowH * 0.4;
+    // Transition zone: starts 80% before section enters, ends 30% into section
+    const start = secTop - windowH * 0.9;
+    const end   = secTop + windowH * 0.3;
 
     if (scrollY <= start) break;
 
