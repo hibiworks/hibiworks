@@ -193,7 +193,7 @@ body {
 }
 
 .hero-cta:hover .cta-line {
-  width: calc(4.5rem + 10px);
+  width: calc(4.5rem + 40px);
 }
 
 /* ---- Hero scroll indicator ---- */
