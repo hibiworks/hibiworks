@@ -162,29 +162,38 @@ body {
 .hero-cta {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 1rem;
   color: var(--text);
   text-decoration: none;
   font-size: 0.875rem;
   letter-spacing: 0.02em;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--accent);
-  transition: gap 0.25s;
   animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: 0.82s;
 }
 
-.hero-cta:hover {
-  gap: 0.7rem;
+.cta-line {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 3rem;
+  height: 1px;
+  background: var(--accent);
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.cta-dash {
-  color: var(--accent);
-  letter-spacing: -0.08em;
+.cta-line::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid var(--accent);
+  border-top: 1.5px solid var(--accent);
+  transform: rotate(45deg) translate(-1px, 1px);
 }
 
-.cta-arrow {
-  color: var(--accent);
+.hero-cta:hover .cta-line {
+  width: calc(4.5rem + 10px);
 }
 
 /* ---- Hero scroll indicator ---- */
