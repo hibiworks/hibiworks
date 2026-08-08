@@ -305,6 +305,80 @@ body {
   transition: transform 0.2s, color 0.2s;
 }
 
+/* ---- Works ---- */
+
+.works {
+  padding: 6rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.work-card {
+  border: 1px solid var(--border);
+  padding: 2.25rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: border-color 0.25s;
+}
+
+.work-card:hover {
+  border-color: var(--accent);
+}
+
+.work-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-category {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.work-year {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.work-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.work-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.85;
+  flex: 1;
+}
+
+.work-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  margin-top: 0.5rem;
+}
+
+.work-link:hover .cta-line {
+  width: calc(4.5rem + 40px);
+}
+
 /* ---- About ---- */
 
 .about {
@@ -540,6 +614,7 @@ body {
   }
 
   .services,
+  .works,
   .about,
   .contact {
     padding: 5rem 0;
